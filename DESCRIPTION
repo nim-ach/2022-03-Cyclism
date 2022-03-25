@@ -7,6 +7,7 @@ Authors@R:
       person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
              comment = c(ORCID = "0000-0001-7291-247X")),
       person("Valeska", "Oyarzo Igor", , "valeska.oyarzo@umag.cl", role = c("aut")),
+      person("Claudia", "Estrada Goic", , "claudia.estrada@umag.cl", role = c("aut")),
       person("Cristian", "Núñez Espinosa", , "cristian.nunez@umag.cl", role = c("aut"),
              comment = c(ORCID = "0000-0002-9896-7062"))
     )
