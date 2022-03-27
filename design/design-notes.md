@@ -1,5 +1,5 @@
 # Research design notes
 
-## March-25
+## March
 
-- Experiment's protocol is developed in a concise sheet.
+- Experiment's protocol is being developed in a concise Google document at: docs.google.com/document/d/1hcSm06RfiNkq2PFP9NrW5ATcl-LJ4si2FyxQj1nFW44.
