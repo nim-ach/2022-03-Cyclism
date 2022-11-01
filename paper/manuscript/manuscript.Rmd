@@ -1,0 +1,228 @@
+---
+title: ""
+bibliography: "misc/ref.bib"
+csl: "misc/vancouver.csl"
+output: 
+  word_document:
+    reference_docx: "ref.docx"
+editor_options: 
+  chunk_output_type: console
+---
+
+**Título**: Marcadores de regulación autonómica en respuesta a la prueba de umbral de potencia funcional en ciclistas de elite.
+
+**Title**: Markers of autonomic regulation in response to functional power threshold testing in elite cyclists.
+
+**Autores**: Matías Castillo-Aguilar^1,2^, Cristian Núñez-Espinosa ^2,3^\*.
+
+::: {custom-style="Afiliation"}
+^1^ Kinesiología Departamento, Universidad de Magallanes, Punta Arenas, Chile.
+
+^2^ Chilean Austral Integrative Neurophysiology Group ([NIM-ACh](https://nimach.org)), Centro Asistencial de Docencia e Investigación (CADI-UMAG), Punta Arenas Chile.
+
+^3^ Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile.
+:::
+
+### \*Autor de correspondencia 
+
+Cristian Núñez-Espinosa, School of Medicine, Magallanes University, Punta Arenas, Chile. Centro Asistencial de Docencia e Investigación CADI-UMAG, Chile. e-mail: [cristian.nunez\@umag.cl](mailto:cristian.nunez@umag.cl). Address: Avenida Bulnes 01855, Box 113-D. Phone: +56 61 2201411
+
+\newpage
+
+## Resumen  
+
+**Objetivo**: Evaluar el impacto de una prueba de umbral de potencia funcional (FTP) sobre indicadores de regulación autonómica en ciclistas de alto rendimiento. **Material y métodos**: Un total de 12 ciclistas de sexo masculino (edad media 36.1 años ± 11.2) fueron reclutados. Se evaluaron parámetros de composición corporal usando bioimpedanciometría, así como variabilidad de la frecuencia cardíaca (HRV) antes y después de la aplicación de la prueba de FTP. **Resultados**: [...]. **Conclusión**: [...].
+
+**Palabras clave**: [...].
+
+\newpage
+
+## Abstract 
+
+**Objective**: To evaluate the impact of a functional power threshold test (FTP) on autonomic regulation indicators in high performance cyclists. **Material and methods**: A total of 12 male cyclists (mean age 36.1 years ± 11.2) were recruited. Body composition parameters were evaluated using bioimpedancemetry, as well as heart rate variability (HRV) before and after the application of the FTP assessment. **Results**: [...]. **Conclusion**: [...].
+
+**Keywords**: [...].
+
+\newpage
+
+# Introducción
+
+<!---- Antecedentes históricos ---->
+
+
+<!---- Conceptualización del problema ---->
+
+
+<!---- Hipótesis y objetivos ---->
+
+
+# Material y métodos
+
+## Participantes
+
+[...]. 
+
+## Instrumentos
+
+### Instrumento 1 
+
+[...].
+
+### Instrumento 2
+
+[...].
+
+### Instrumento 3 
+
+[...].
+
+### Instrumento 4 
+
+[...].
+
+
+## Procedimiento 
+
+[...].
+
+[...].  
+
+## Análisis estadístico
+
+Para comparar el cambio de los índices autonómicos a la prueba de FTP, estimamos la diferencia media observada y calculamos el intervalo de confianza al 95% utilizando un remuestreo bootstrap con 5000 muestras simuladas, así como la diferencia media estandarizada corregida por sesgos (*g* de Hedges). Para evaluar el impacto de una o más variables en la respuesta de los indices de actividad autonómica, ajustamos múltiples modelos de regresión lineal, fijando como variable respuesta el delta (∆) absoluto entre mediciones de HRV del FTP, y como variables predictoras los parámetros de composición corporal, edad, watios ajustados por el peso corporal, potencia media, el puntaje en los cuestionarios de ansiedad, depresión y sensibilidad estacional, 
+
+[...], usando el lenguaje *R* para el cálculo de estadísticos, [@rlanguage].
+
+# Resultados
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE,
+                      message = FALSE,
+                      echo = FALSE)
+
+library(cyclismProj) # paquete de datos
+library(data.table)  # manipulación de datos
+library(report)  # reporte
+library(datawizard)
+
+data("males", package = "cyclismProj") # cargamos los datos
+```
+
+## Caracterización basal
+
+```{r, eval=FALSE}
+males[, mean_ic_boot(age)];
+males[, .N, sex];
+```
+
+
+
+## Evaluando los cambios en los índices de actividad autonómica
+
+```{r, eval=FALSE}
+# PNS
+males[, mean_ic_boot(hrv_delta_pns, k = 2)]
+males[, effectsize::hedges_g(hrv_basal_pns, hrv_post_pns, paired = TRUE)];
+report_statistics(lm(hrv_delta_pns ~ 1, males))
+
+# SNS
+males[, mean_ic_boot(hrv_delta_sns, k = 2)]
+males[, effectsize::hedges_g(hrv_basal_sns, hrv_post_sns, paired = TRUE)];
+report_statistics(lm(hrv_delta_sns ~ 1, males))
+
+#Stress
+males[, mean_ic_boot(hrv_delta_stress)] |> print(digits = 2);
+males[, effectsize::hedges_g(hrv_basal_stress, hrv_post_stress, paired = TRUE)];
+report_statistics(lm(hrv_delta_stress ~ 1, males))
+```
+
+La diferencia media observada en el índice de actividad parasimpática fue de -2.03 puntos (IC~95%~[-2.53, -1.62], *t*(11) = -8.34, *p* < 0.001, *g* de Hedges = 2.24, IC~95%~[1.17, 3.29]), lo que sugiere una disminución en la actividad parasimpática posterior a la aplicación del FTP. El índice de actividad simpática se vió aumentado en 6.28 puntos (IC~95%~[4.47, 8.48], *t*(11) = 5.83, *p* < 0.001, *g* de Hedges = -1.56, IC~95%~[-2.38, -0.72]), mientras que el índice de stress se vió aumentado en 23.1 puntos posterior a la realización del FTP (IC~95%~[14.80, 33.27], *t*(11) = 4.67, *p* < 0.001, *g* de Hedges = -1.25, IC~95%~[-1.96, -0.50]). Las variaciones inter-individuales de los índices autonómicos pueden observarse en la Figura 1.
+
+```{r fig-1, fig.cap="Figura 1. Variaciones de índices de regulación autonómica. En el gráfico se presenta la distribución basada en la posición (cajas), la media e intervalo al 95% calculado mediante remuestreo bootstrap (punto y barras de error), y la variación inter-individual en respuesta a la prueba de FTP (lineas conectadas)."}
+knitr::include_graphics("figures/figure-1.tiff")
+```
+
+## Respuesta autonómica ajustada
+
+### Variación del índice PNS
+
+```{r pns-comp, eval=FALSE}
+model <- hrv_delta_pns ~ center(ime) + center(waist_hip_ratio)
+
+fit <- lm(model, males)
+summary(fit, correlation = TRUE)
+
+# No correlation between variables
+model.frame(fit) |> 
+  correlation::correlation(p_adjust = "none", method = "pearson") 
+
+report_parameters(fit)
+```
+
+Despues de evaluar mediante modelos de regresión lineal el efecto que tuvieron diferentes medidas de composición corporal, ajustamos un modelo que explica una gran proporción de la varianza observada (*R*^2^ = 0.85, *F*(2, 8) = 22.50, *p* < 0.001, *R*~adj~^2^ = 0.81), el cual considera considera $\Delta\operatorname{PNS} = \beta_{0} + \beta_{1} \times {\operatorname{IME}} + \beta_{2} \times {\operatorname{WH}_{ratio}} + \epsilon$. En este modelo observamos que por cada incremento en una unidad en IME observamos un disminución proporcional en 1.32 puntos PNS (IC~95%~[-1.81, -0.84], *t*(8) = -6.25, *p* < 0.001), mientras que en el caso del WH~ratio~, un incremento en una unidad en esta variable se asocia a un incremento en 7.74 puntos en PNS (IC~95%~[3.77, 11.72], *t*(8) = 4.49, *p* = 0.002). 
+
+```{r pns-interaction, eval=FALSE}
+model <- hrv_delta_pns ~ ime * waist_hip_ratio
+
+fit <- lm(model, males)
+summary(fit, correlation = TRUE)
+
+report_parameters(fit)
+
+modelbased::estimate_slopes(fit, trend = "waist_hip_ratio", at = "ime", length = 100)
+```
+
+En el mismo modelo, añadir un término con interacción entre IME y WH~ratio~ no resultó en un efecto significativo ($\beta$ = 4.22, IC~95%~[-2.57, 11.00], t(7) = 1.47, p = 0.185), pese a esto, se observó una tendencia que sugiere que a mayor IME, existe un aumento en el ∆PNS por cada incremento en WH~ratio~, en donde por cada incremento en una unidad en WH~ratio~ existe un incremento en 5.45 puntos en el índice PNS cuando el sujeto tiene un IME de 8.08 (IC~95%~[0.15, 10.75], *t*(9) = 2.43, *p* = 0.045), pero cuando el sujeto tiene un IME de 9.3, existe un incremente en 10.59 puntos en el índice PNS post FTP (IC~95%~[4.63, 16.56], *t*(9) = 4.20, *p* = 0.045). Este comportamiento se ilustra en la Figura 2.
+
+```{r fig-2, fig.cap="Figura 2. Modulación del IME sobre el efecto del WH~ratio~ sobre la variación del índice PNS post FTP."}
+knitr::include_graphics("figures/figure-2.tiff")
+```
+
+```{r sns-comp, eval=FALSE}
+model <- hrv_delta_sns ~ center(age) + center(bmi) + center(imo) 
+
+fit <- lm(model, males)
+summary(fit, correlation = TRUE)
+
+report_parameters(fit)
+
+modelbased::estimate_means(fit, at = "imo") |> plot()
+```
+
+```{r stress-comp, eval=FALSE}
+model <- hrv_delta_stress ~ imo 
+
+fit <- lm(model, males)
+summary(fit, correlation = TRUE)
+
+report_parameters(fit)
+
+males[, cor.test(hrv_delta_sns, hrv_delta_stress)] |> report_parameters()
+```
+
+Al analizar las variaciones observadas en el índice SNS, hallamos que el mejor modelo fue el que consideró al IMO como único predictor (R^2^ = 0.81, *F*(1, 10) = 43.87, *p* < 0.001, *R*^2^~adj~ = 0.80), en donde por cada incremento en una unidad en IMO, observamos un incremento proporcional en 11.63 unidades en el índice SNS (IC~95%~[7.72, 15.55], *t*(10) = 6.62, *p* < 0.001), representado como $\Delta\operatorname{SNS} = \beta_{0} + \beta_{1} \times {\operatorname{IMO}} + \epsilon$. El efecto de IME se mantuvo constante al incluir otros términos en la ecuación como la edad y el BMI ($\beta$ = 11.65, IC~95%~[6.69, 16.61], *t*(8) = 5.41, *p* < 0.001). Otro índice evaluado fue el de *stress*, sin embargo y al tener un comportamiento similar que el índice SNS (*r*~Pearson~ = 0.99, IC~95%~[0.97, 1.00], *t*(10) = 24.68, *p* < 0.001), observamos una asociación similar entre IMO y el índice de *stress*. Otras configuraciones de predictores se evaluaron, sin embargo no fueron capaces de explicar una proporción significativa de la varianza observada en nuestros datos.
+
+
+# Discusión
+
+[...].
+
+[...].
+
+[...].
+
+# Conclusión
+
+[...]. 
+
+# Agradecimientos
+
+[...].
+
+# Conflictos de interés
+
+[...].
+
+# Referencias
+
+<div id="refs"></div>

@@ -24,6 +24,7 @@ Authors:
 \itemize{
   \item Katherine Harris King \email{katherine.harris@umag.cl}
   \item Valeska Oyarzo Igor \email{valeska.oyarzo@umag.cl}
+  \item Claudia Estrada Goic \email{claudia.estrada@umag.cl}
   \item Cristian Núñez Espinosa \email{cristian.nunez@umag.cl} (\href{https://orcid.org/0000-0002-9896-7062}{ORCID})
 }
 

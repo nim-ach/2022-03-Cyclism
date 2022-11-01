@@ -17,8 +17,12 @@ Description:
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 URL: https://github.com/nim-ach/cyclismProj
 BugReports: https://github.com/nim-ach/cyclismProj/issues
 Imports: 
-    data.table
+    data.table,
+    stats
+Depends: 
+    R (>= 3.10)
+LazyData: true
