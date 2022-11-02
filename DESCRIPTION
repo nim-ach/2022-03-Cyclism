@@ -3,9 +3,9 @@ Title: Cyclists research project
 Version: 0.0.0.9000
 Authors@R: 
     c(
-      person("Katherine", "Harris King", , "katherine.harris@umag.cl", role = c("aut")),
       person("Matías", "Castillo Aguilar", , "matcasti@umag.cl", role = c("aut", "cre"),
              comment = c(ORCID = "0000-0001-7291-247X")),
+      person("Katherine", "Harris King", , "katherine.harris@umag.cl", role = c("aut")),
       person("Valeska", "Oyarzo Igor", , "valeska.oyarzo@umag.cl", role = c("aut")),
       person("Claudia", "Estrada Goic", , "claudia.estrada@umag.cl", role = c("aut")),
       person("Cristian", "Núñez Espinosa", , "cristian.nunez@umag.cl", role = c("aut"),

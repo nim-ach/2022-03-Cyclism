@@ -4,8 +4,9 @@
 library(cyclismProj)
 library(data.table)
 library(modelbased)
+library(datawizard)
 library(ggplot2)
-library(see)
+library(MASS)
 
 data("males", package = "cyclismProj")
 
@@ -13,28 +14,30 @@ ggplot2::theme_set(new = theme_classic())
 
 # Ajustamos modelo --------------------------------------------------------
 
-fit <- lm(hrv_delta_pns ~ ime * waist_hip_ratio, males)
-summary(fit, correlation = TRUE)
+fit <- rlm(formula = hrv_delta_sns ~ center(imo) * center(ftp_mean_power),
+           data = males, maxit = 1e5, acc = 1e-10)
 
-plot_data <- modelbased::estimate_slopes(
-  model = fit,
-  trend = "waist_hip_ratio",
-  at = "ime",
-  length = 300
-)
+.slopes <- modelbased::estimate_slopes(fit, at = "ftp_mean_power", length = 100)
 
-plot_data <- as.data.table(plot_data)
+fig2a <- ggplot(.slopes, aes(ftp_mean_power, Coefficient)) +
+  geom_line(col = "darkblue", lwd = 1) +
+  geom_ribbon(aes(ymin = CI_low, ymax = CI_high), alpha = .2, show.legend = FALSE) +
+  labs(x = "Mean power in FTP test", y = expression("Effect of MBI on "*Delta*"SNS")) +
+  scale_color_brewer() +
+  ggdist::theme_ggdist()
 
-plot_data[, Confidence := fifelse(p < 0.05, "Significativo", "No significativo")
-          ][, grp := rleid(Confidence)]
+plot_data <- males[, .SD, .SDcols = grepl("pns|sns", names(males))] |>
+  melt.data.table(measure.vars = patterns(SNS = "sns$", PNS = "pns$"))
 
-p1 <- ggplot(plot_data, aes(ime, Coefficient)) +
-  geom_hline(yintercept = 0, lty = 2) +
-  geom_line(aes(group = 1, col = Confidence), lwd = 1) +
-  geom_ribbon(aes(ymin = CI_low, ymax = CI_high, group = grp, fill = Confidence), alpha = 0.4) +
-  labs(x = "IME", y = expression("Efecto de WH ratio en "*Delta*"PNS")) +
-  theme(legend.position = "top") +
-  see::scale_color_flat_d(aesthetics = c("color", "fill"), reverse = TRUE)
+plot_data[, variable := `levels<-`(variable, c("Basal", "Post-FTP", "Delta"))][]
 
-ggsave("paper/manuscript/figures/figure-2.pdf", p1, "pdf")
-ggsave("paper/manuscript/figures/figure-2.tiff", p1, "tiff", dpi = 360)
+fig2b <- ggplot(plot_data, aes(SNS, PNS)) +
+  facet_grid(cols = vars(variable), scales = "free") +
+  geom_point() +
+  geom_smooth(method = MASS::rlm, col =  "darkblue") +
+  ggdist::theme_ggdist()
+
+fig2 <- see::plots(fig2a, fig2b, n_columns = 1, tags = "A", tag_suffix = ".")
+
+ggsave("paper/manuscript/figures/figure-2.pdf", fig2, "pdf")
+ggsave("paper/manuscript/figures/figure-2.tiff", fig2, "tiff", dpi = 360)

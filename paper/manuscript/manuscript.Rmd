@@ -45,7 +45,7 @@ Cristian Núñez-Espinosa, School of Medicine, Magallanes University, Punta Aren
 
 \newpage
 
-# Introducción
+# Introduction
 
 <!---- Antecedentes históricos ---->
 
@@ -56,44 +56,48 @@ Cristian Núñez-Espinosa, School of Medicine, Magallanes University, Punta Aren
 <!---- Hipótesis y objetivos ---->
 
 
-# Material y métodos
+# Material y methods
 
-## Participantes
+## Participants
 
 [...]. 
 
-## Instrumentos
+## Instruments
 
-### Instrumento 1 
-
-[...].
-
-### Instrumento 2
+### Instrument 1 
 
 [...].
 
-### Instrumento 3 
+### Instrument 2
 
 [...].
 
-### Instrumento 4 
+### Instrument 3 
+
+[...].
+
+### Instrument 4 
 
 [...].
 
 
-## Procedimiento 
+## Procedures 
 
 [...].
 
 [...].  
 
-## Análisis estadístico
+## Statistical analyses
 
-Para comparar el cambio de los índices autonómicos a la prueba de FTP, estimamos la diferencia media observada y calculamos el intervalo de confianza al 95% utilizando un remuestreo bootstrap con 5000 muestras simuladas, así como la diferencia media estandarizada corregida por sesgos (*g* de Hedges). Para evaluar el impacto de una o más variables en la respuesta de los indices de actividad autonómica, ajustamos múltiples modelos de regresión lineal, fijando como variable respuesta el delta (∆) absoluto entre mediciones de HRV del FTP, y como variables predictoras los parámetros de composición corporal, edad, watios ajustados por el peso corporal, potencia media, el puntaje en los cuestionarios de ansiedad, depresión y sensibilidad estacional, 
+Descriptive statistics were expressed as median and interquartile range (IQR) for continuous variables, and absolute and relative frequency (n [%]) for categorical outcomes.
 
-[...], usando el lenguaje *R* para el cálculo de estadísticos, [@rlanguage].
+In order to assess the relationship between autonomic indexes we used Spearman's rank correlation, given that the data does not follow an aproximate Gaussian distribution, assessed through graphical and analytical methods. To analyze the change in autonomic parameters in response to FTP measurements, we compute the mean difference with 95% confidence interval (CI) bias corrected and accelerated, calculated through bootstrap resampling technique, reporting as well, the bias corrected standardize mean difference (Hedges *g*) with their corresponding 95% CI.
 
-# Resultados
+To assess the influence of potential confounders on the autonomic response to FTP, we fitted a robust version of linear regression by iterated reweighted least squares (IRLS), assigning more weight to less extreme values and thus controlling for the influence of outliers when describing the estimated parameters of the model. To this end, the predictors were centered around their mean to interpret the intercept as the estimated response, while keeping the predictors constant and thus controlling for their influence.
+
+All analyses were performed in the R programming language [@rlanguage], within RStudio [@rstudio]. Complementary R packages were used for analysis and plotting [@masspackage; @effectsize; @modelbased; @correlation; @ggplot2].
+
+# Results
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(warning = FALSE,
@@ -103,21 +107,19 @@ knitr::opts_chunk$set(warning = FALSE,
 library(cyclismProj) # paquete de datos
 library(data.table)  # manipulación de datos
 library(report)  # reporte
+library(MASS) # robust lm
 library(datawizard)
 
 data("males", package = "cyclismProj") # cargamos los datos
 ```
 
-## Caracterización basal
+## Autonomic activity and stress
 
-```{r, eval=FALSE}
-males[, mean_ic_boot(age)];
-males[, .N, sex];
-```
+When assessing the relationship between the associated variables within the athletes, we observed that a greater SNS activity and Stress index on baseline were associated with a smaller decrease in the PNS activity in response to the FTP test (baseline Stress, $\rho$ = 0.67, *p* = 0.017; baseline SNS, $\rho$ = 0.69, *p* = 0.013).
 
+In this sense, a greater baseline PNS activity was associated with larger decreases on the PNS index in response to the FTP test ($\rho$ = -0.61, *p* = 0.037), and this decrease in ∆ PNS was associated with greater increases in the SNS activity and the stress index in response to the FTP test (∆ SNS, $\rho$ = -0.6, *p* = 0.039; ∆ Stress, $\rho$ = -0.62, *p* = 0.033). 
 
-
-## Evaluando los cambios en los índices de actividad autonómica
+This is directly linked with PNS activity at post-SFT, whereas greater levels were associated with lower increases in Stress index and SNS activity levels in response to SFT test (∆ Stress, $\rho$ = -0.69, *p* = 0.014; ∆ SNS, $\rho$ = -0.77, *p* = 0.003). 
 
 ```{r, eval=FALSE}
 # PNS
@@ -136,74 +138,64 @@ males[, effectsize::hedges_g(hrv_basal_stress, hrv_post_stress, paired = TRUE)];
 report_statistics(lm(hrv_delta_stress ~ 1, males))
 ```
 
-La diferencia media observada en el índice de actividad parasimpática fue de -2.03 puntos (IC~95%~[-2.53, -1.62], *t*(11) = -8.34, *p* < 0.001, *g* de Hedges = 2.24, IC~95%~[1.17, 3.29]), lo que sugiere una disminución en la actividad parasimpática posterior a la aplicación del FTP. El índice de actividad simpática se vió aumentado en 6.28 puntos (IC~95%~[4.47, 8.48], *t*(11) = 5.83, *p* < 0.001, *g* de Hedges = -1.56, IC~95%~[-2.38, -0.72]), mientras que el índice de stress se vió aumentado en 23.1 puntos posterior a la realización del FTP (IC~95%~[14.80, 33.27], *t*(11) = 4.67, *p* < 0.001, *g* de Hedges = -1.25, IC~95%~[-1.96, -0.50]). Las variaciones inter-individuales de los índices autonómicos pueden observarse en la Figura 1.
+## Unadjusted autonomic response
 
-```{r fig-1, fig.cap="Figura 1. Variaciones de índices de regulación autonómica. En el gráfico se presenta la distribución basada en la posición (cajas), la media e intervalo al 95% calculado mediante remuestreo bootstrap (punto y barras de error), y la variación inter-individual en respuesta a la prueba de FTP (lineas conectadas)."}
+The mean observed difference in the PNS index was -2.03 points (CI~95%~[-2.53, -1.62]), suggesting a decrease in PNS activity post-SFT test (*t*(11) = -8.34, *p* < 0.001, Hedges *g* = 2.24, CI~95%~[1.17, 3.29]), while the SNS index experienced an increase of 6.28 points (CI~95%~[4.47, 8.48], *t*(11) = 5.83, *p* < 0.001, Hedges' *g* = -1.56, CI~95%~[-2.38, -0.72]) relative to their baseline values. The Stress and SNS index tend to exhibit similar behaviour between measurements of the FTP (association between ∆SNS and ∆Stress, $\rho$ = 0.98, *p* < 0.001), so the Stress index also experienced and increase from baseline relative to the FTP measurements (mean difference = 23.1, CI~95%~[14.80, 33.27], *t*(11) = 4.67, *p* < 0.001, Hedges' *g* = -1.25, CI~95%~[-1.96, -0.50]). The utonomic variations within subjects can be seen in figure 1.
+
+```{r fig-1, fig.cap="Figure 1. Inter-individual variations of the autonomic regulation indexes. Boxplots and errorbars with 95% CI based on bootstrap resampling around the mean and the within subjects response to the FTP test (represented by conected lines) are shown."}
 knitr::include_graphics("figures/figure-1.tiff")
 ```
 
-## Respuesta autonómica ajustada
-
-### Variación del índice PNS
+## Adjusted PNS response
 
 ```{r pns-comp, eval=FALSE}
-model <- hrv_delta_pns ~ center(ime) + center(waist_hip_ratio)
+model_simple <- hrv_delta_pns ~ center(ime)
+model_full <- hrv_delta_pns ~ center(ime) + center(waist_hip_ratio)
 
-fit <- lm(model, males)
-summary(fit, correlation = TRUE)
-
-# No correlation between variables
-model.frame(fit) |> 
-  correlation::correlation(p_adjust = "none", method = "pearson") 
-
-report_parameters(fit)
+report_parameters(x = rlm(model_simple, males, maxit = 1e5, acc = 1e-10))
+report_parameters(x = rlm(model_full, males, maxit = 1e5, acc = 1e-10))
 ```
 
-Despues de evaluar mediante modelos de regresión lineal el efecto que tuvieron diferentes medidas de composición corporal, ajustamos un modelo que explica una gran proporción de la varianza observada (*R*^2^ = 0.85, *F*(2, 8) = 22.50, *p* < 0.001, *R*~adj~^2^ = 0.81), el cual considera considera $\Delta\operatorname{PNS} = \beta_{0} + \beta_{1} \times {\operatorname{IME}} + \beta_{2} \times {\operatorname{WH}_{ratio}} + \epsilon$. En este modelo observamos que por cada incremento en una unidad en IME observamos un disminución proporcional en 1.32 puntos PNS (IC~95%~[-1.81, -0.84], *t*(8) = -6.25, *p* < 0.001), mientras que en el caso del WH~ratio~, un incremento en una unidad en esta variable se asocia a un incremento en 7.74 puntos en PNS (IC~95%~[3.77, 11.72], *t*(8) = 4.49, *p* = 0.002). 
+Rank based correlation analyses suggest that from all body composition parameters, skeletal muscle index (SMI) was the only one that was inversely associated with ∆PNS, suggesting that lower levels of SMI were related to a lower decrease in PNS activity in response to FTP test ($\rho$ = -0.69, *p* = 0.02). 
 
-```{r pns-interaction, eval=FALSE}
-model <- hrv_delta_pns ~ ime * waist_hip_ratio
+After fitting a simple linear model based on IRLS, we found that the ∆PNS changed from -2.03 points (CI~95%~[-2.53, -1.62]) in the first unadjusted comparison to -1.89 points (CI~95%~[-2.33, -1.45], *t*(9) = -9.73, *p* < 0.001) when controlling for SMI ($\beta$ = -0.71, CI~95%~[-1.53, 0.10], *t*(9) = -1.99, *p* = 0.078). 
 
-fit <- lm(model, males)
-summary(fit, correlation = TRUE)
+However, and after testing the influence of other predictors in the model while still considering SMI as a predictor, we observed that the inclusion of the waist-to-hip ratio (WH~ratio~) yielded a significant effect on ∆PNS ($\beta$ = 7.90, CI~95%~[4.16, 11.63], *t*(8) = 4.88, *p* = 0.001), as well as for the effect of SMI on the latter ($\beta$ = -1.38, CI~95%~[-1.84, -0.92], *t*(8) = -6.94, *p* < 0.001). Thus, after adjusting for the effect of SMI and WH~ratio~, the estimated response of ∆PNS to the FTP test was -1.93 points (CI~95%~[-2.16, -1.70], *t*(8) = -19.15, *p* < 0.001). The final model explaining the PNS response to the FTP test is best described by the following equation:
 
-report_parameters(fit)
+$$
+\Delta \operatorname{PNS} = -1.928 -1.379 \times \operatorname{SMI} + 7.898 \times \operatorname{{WH}_{ratio}} + \epsilon
+$$
 
-modelbased::estimate_slopes(fit, trend = "waist_hip_ratio", at = "ime", length = 100)
+```{r sns-comp, eval=FALSE}
+# IMO = (MBI = muscle-bone index)
+model_simple <- rlm(formula = hrv_delta_sns ~ center(imo), 
+                    data = males, maxit = 1e5, acc = 1e-10)
+model_full <- rlm(formula = hrv_delta_sns ~ center(imo) * center(ftp_mean_power), 
+                  data = males, maxit = 1e5, acc = 1e-10)
+
+report_table(x = model_simple)
+report_table(x = model_full)
+report_parameters(x = model_simple)
+report_parameters(x = model_full)
 ```
 
-En el mismo modelo, añadir un término con interacción entre IME y WH~ratio~ no resultó en un efecto significativo ($\beta$ = 4.22, IC~95%~[-2.57, 11.00], t(7) = 1.47, p = 0.185), pese a esto, se observó una tendencia que sugiere que a mayor IME, existe un aumento en el ∆PNS por cada incremento en WH~ratio~, en donde por cada incremento en una unidad en WH~ratio~ existe un incremento en 5.45 puntos en el índice PNS cuando el sujeto tiene un IME de 8.08 (IC~95%~[0.15, 10.75], *t*(9) = 2.43, *p* = 0.045), pero cuando el sujeto tiene un IME de 9.3, existe un incremente en 10.59 puntos en el índice PNS post FTP (IC~95%~[4.63, 16.56], *t*(9) = 4.20, *p* = 0.045). Este comportamiento se ilustra en la Figura 2.
+## Adjusted SNS response
 
-```{r fig-2, fig.cap="Figura 2. Modulación del IME sobre el efecto del WH~ratio~ sobre la variación del índice PNS post FTP."}
+Spearman's rank based correlation suggests a positive association between the muscle-bone index (MBI) and the ∆SNS, suggesting that greater values of MBI could be associated with greater increases in SNS activity in response to the SFT test ($\rho$ = 0.82, *p* = 0.001).
+
+When fitting a robust linear regression with IRLS, we observed that the response of SNS activity was maintained after adjusting for MBI (Intercept = 6.20, CI~95%~[5.00, 7.40], *t*(10) = 11.53, *p* < 0.001), considering that for every 1 unit increase in MBI, we could expect an increase in 11.72 points in the SNS activity in response to the SFT test ($\beta$ = 11.72, CI~95%~[7.39, 16.04], *t*(10) = 6.04, *p* < 0.001).
+
+Despite of previous findings in simple models, and after trying different combinations of predictors while keeping MBI in the final model, we could identify an interaction effect between the mean power achieved during the FTP test (Power^FTP^) and MBI ($\beta$ = -0.05, CI~95%~[-0.09, -4.99e-03], *t*(8) = -2.56, *p* = 0.033), considering that Power^FTP^ itself was not statistically influential on the outcome response ($\beta$ = -3.23e-03, CI~95%~[-0.02, 0.01], *t*(8) = -0.41, *p* = 0.692) while MBI was still significant, even after including Power^FTP^ in the equation ($\beta$ = 10.26, CI~95%~[8.10, 12.42], *t*(8) = 10.96, *p* < 0.001). In this sense, and after controlling for the effect of MBI and Power^FTP^, we observed that the estimated response of ∆SNS was 6.06 points (CI~95%~[5.52, 6.59], *t*(8) = 26.01, *p* < 0.001). The linear relationship between variables can be seen in figure 2. The final model that best explains the variations in ∆SNS response was the following:
+
+$$
+\Delta \operatorname{SNS} = 6.055 + 10.259 \times \operatorname{MBI} -0.003 \times \operatorname{{Power}^{FTP}} -0.050 \times (\operatorname{MBI} \times \operatorname{{Power}^{FTP}}) + \epsilon
+$$
+
+```{r fig-2, fig.cap="Figure 2. Linear response between autonomic parameters at baseline, post-SFT and the variations between these time periods. A, Interaction effect between Power^FTP^ and MBI; B, Linear relationship between HRV measurements."}
 knitr::include_graphics("figures/figure-2.tiff")
 ```
 
-```{r sns-comp, eval=FALSE}
-model <- hrv_delta_sns ~ center(age) + center(bmi) + center(imo) 
-
-fit <- lm(model, males)
-summary(fit, correlation = TRUE)
-
-report_parameters(fit)
-
-modelbased::estimate_means(fit, at = "imo") |> plot()
-```
-
-```{r stress-comp, eval=FALSE}
-model <- hrv_delta_stress ~ imo 
-
-fit <- lm(model, males)
-summary(fit, correlation = TRUE)
-
-report_parameters(fit)
-
-males[, cor.test(hrv_delta_sns, hrv_delta_stress)] |> report_parameters()
-```
-
-Al analizar las variaciones observadas en el índice SNS, hallamos que el mejor modelo fue el que consideró al IMO como único predictor (R^2^ = 0.81, *F*(1, 10) = 43.87, *p* < 0.001, *R*^2^~adj~ = 0.80), en donde por cada incremento en una unidad en IMO, observamos un incremento proporcional en 11.63 unidades en el índice SNS (IC~95%~[7.72, 15.55], *t*(10) = 6.62, *p* < 0.001), representado como $\Delta\operatorname{SNS} = \beta_{0} + \beta_{1} \times {\operatorname{IMO}} + \epsilon$. El efecto de IME se mantuvo constante al incluir otros términos en la ecuación como la edad y el BMI ($\beta$ = 11.65, IC~95%~[6.69, 16.61], *t*(8) = 5.41, *p* < 0.001). Otro índice evaluado fue el de *stress*, sin embargo y al tener un comportamiento similar que el índice SNS (*r*~Pearson~ = 0.99, IC~95%~[0.97, 1.00], *t*(10) = 24.68, *p* < 0.001), observamos una asociación similar entre IMO y el índice de *stress*. Otras configuraciones de predictores se evaluaron, sin embargo no fueron capaces de explicar una proporción significativa de la varianza observada en nuestros datos.
-
-
-# Discusión
+# Discussion
 
 [...].
 
@@ -211,18 +203,18 @@ Al analizar las variaciones observadas en el índice SNS, hallamos que el mejor 
 
 [...].
 
-# Conclusión
+# Conclusion
 
 [...]. 
 
-# Agradecimientos
+# Acknowledgment
 
 [...].
 
-# Conflictos de interés
+# Conflicts of interest
 
 [...].
 
-# Referencias
+# References
 
 <div id="refs"></div>
