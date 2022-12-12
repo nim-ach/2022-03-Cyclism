@@ -9,89 +9,112 @@ editor_options:
   chunk_output_type: console
 ---
 
-**Título**: Marcadores de regulación autonómica en respuesta a la prueba de umbral de potencia funcional en ciclistas de elite.
+**Title**: Cardiac autonomic regulation in response to functional power threshold testing in elite cyclists.
 
-**Title**: Markers of autonomic regulation in response to functional power threshold testing in elite cyclists.
+**Título**: Regulación autonómica cardiaca en respuesta a la prueba de umbral de potencia funcional en ciclistas de élite.
 
-**Autores**: Matías Castillo-Aguilar^1,2^, Cristian Núñez-Espinosa ^2,3^\*.
+**Authors**: Matías Castillo-Aguilar^1,2^, Diego Mabe-Castro^1,2^, Matías Mabe-Castro^2,3^, Valeska Oyarzo^2,4^, Katherine Harris King^1,2^, Pablo Valdés-Badilla^5,6^, Pedro Delgado-Floody^7,8^, Jorge González-Puelma^2,3^, Cristian Núñez-Espinosa^2,3^\*.
 
 ::: {custom-style="Afiliation"}
-^1^ Kinesiología Departamento, Universidad de Magallanes, Punta Arenas, Chile.
+^1^ Departamento de Kinesiología, Universidad de Magallanes, Punta Arenas, Chile.
 
-^2^ Chilean Austral Integrative Neurophysiology Group ([NIM-ACh](https://nimach.org)), Centro Asistencial de Docencia e Investigación (CADI-UMAG), Punta Arenas Chile.
+^2^ Centro Asistencial de Docencia e Investigación (CADI-UMAG), Punta Arenas Chile.
 
 ^3^ Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile.
+
+^4^ Fonoaudiología, Universidad de Magallanes, Punta Arenas, Chile.
+
+^5^ Department of Physical Activity Sciences, Faculty of Education Sciences, Universidad Católica del Maule, Talca 3530000, Chile.
+
+^6^ Sports Coach Career, School of Education, Universidad Viña del Mar, Viña del Mar 2520000, Chile.
+
+^7^ Department of Physical Education, Sport and Recreation, Universidad de La Frontera, Temuco 4811230, Chile.
+
+^8^ Strength & Conditioning Laboratory, CTS-642 Research Group, Department Physical Education and Sports, Faculty of Sport Sciences, University of Granada, Granada, Spain.
 :::
 
 ### \*Autor de correspondencia 
 
-Cristian Núñez-Espinosa, School of Medicine, Magallanes University, Punta Arenas, Chile. Centro Asistencial de Docencia e Investigación CADI-UMAG, Chile. e-mail: [cristian.nunez\@umag.cl](mailto:cristian.nunez@umag.cl). Address: Avenida Bulnes 01855, Box 113-D. Phone: +56 61 2201411
+Cristian Núñez-Espinosa, Escuela de Medicina, Universidad de Magallanes, Punta Arenas, Chile. Centro Asistencial de Docencia e Investigación CADI-UMAG, Chile. e-mail: [cristian.nunez\@umag.cl](mailto:cristian.nunez@umag.cl). Address: Avenida Bulnes 01855, Box 113-D. Phone: +56 61 2201411
+
+\newpage
+
+## Abstract  
+
+**Objective**: To evaluate the impact of a functional power threshold test (FTP) on cardiac autonomic regulation indicators in high performance cyclists. **Material and methods**: A total of 12 male elite cyclists (mean age 36.1 ± 11.2 years) were recruited. Body composition parameters were measured using bioimpedancemetry and heart rate variability (HRV) before and after the application of the FTP assessment. **Results**: We observed that a greater Sympathetic Nervous System (SNS) index and Stress index on baseline were correlated with a smaller decrease in the Parasympathetic Nervous System (PNS) activity in response to the FTP test (*p* = 0.013). Concerning morphological parameters, the skeletal muscle index (SMI) was the only one that was inversely correlated with ∆PNS (*p* = 0.002) and a positive correlation was observed between the muscle-bone index (MBI) and the ∆SNS (*p* = 0.001). In fully adjusted models we found that waist-to-hip ratio (*p* = 0.001) and SMI significantly influenced ∆PNS (*p* < 0.001), whereas MBI (*p* < 0.001) and the interaction between the latter and Power achieved during FTP influenced ∆SNS (*p* = 0.033). **Conclusion**: The SMI showed a negative effect on the ∆PNS, whereas the muscle-bone index was positively correlated with the ∆SNS in cyclists. These findings suggest that higher SMI and MBI could negatively affect cardiac autonomic response to maximal aerobic exercise, such as FTP.
+
+**Keywords**: Heart Rate; Physical performance; Athletes; Cardiovascular regulation.
 
 \newpage
 
 ## Resumen  
 
-**Objetivo**: Evaluar el impacto de una prueba de umbral de potencia funcional (FTP) sobre indicadores de regulación autonómica en ciclistas de alto rendimiento. **Material y métodos**: Un total de 12 ciclistas de sexo masculino (edad media 36.1 años ± 11.2) fueron reclutados. Se evaluaron parámetros de composición corporal usando bioimpedanciometría, así como variabilidad de la frecuencia cardíaca (HRV) antes y después de la aplicación de la prueba de FTP. **Resultados**: [...]. **Conclusión**: [...].
+**Objetivo**: Evaluar el impacto de una prueba de umbral de potencia funcional (FTP) sobre los indicadores de regulación autonómica cardiaca en ciclistas de alto rendimiento. **Material y métodos**: Se reclutó a un total de 12 ciclistas de élite masculinos (edad media 36.1 ± 11.2 años). Se midieron los parámetros de composición corporal mediante bioimpedanciometría y la variabilidad de la frecuencia cardiaca (HRV) antes y después de la aplicación de la evaluación del FTP. **Resultados**: Observamos que un mayor índice del Sistema Nervioso Simpático (SNS) e índice de Estrés basalmente se correlacionaron con una menor disminución de la actividad del Sistema Nervioso Parasimpático (PNS) en respuesta a la prueba FTP (*p* = 0.013). En cuanto a los parámetros morfológicos, el índice músculo esquelético (SMI) fue el único que se correlacionó inversamente con el ∆PNS (*p* = 0.002) y se observó una correlación positiva entre el índice músculo-hueso (MBI) y el ∆SNS (*p* = 0.001). En los modelos totalmente ajustados encontramos que la relación cintura-cadera (*p* = 0.001) y el SMI influían significativamente en el ∆PNS (*p* < 0.001), mientras que el MBI (*p* < 0.001) y la interacción entre este último y la Potencia alcanzada durante el FTP influían en el ∆SNS (*p* = 0.033). **Conclusión**: El SMI mostró un efecto negativo sobre el ∆PNS, mientras que el índice músculo-hueso se correlacionó positivamente con el ∆SNS en ciclistas. Estos resultados sugieren que un mayor SMI y MBI podrían afectar negativamente a la respuesta autonómica cardiaca al ejercicio aeróbico máximo, como el FTP.
 
-**Palabras clave**: [...].
-
-\newpage
-
-## Abstract 
-
-**Objective**: To evaluate the impact of a functional power threshold test (FTP) on autonomic regulation indicators in high performance cyclists. **Material and methods**: A total of 12 male cyclists (mean age 36.1 years ± 11.2) were recruited. Body composition parameters were evaluated using bioimpedancemetry, as well as heart rate variability (HRV) before and after the application of the FTP assessment. **Results**: [...]. **Conclusion**: [...].
-
-**Keywords**: [...].
+**Palabras clave**: Frecuencia cardiaca; Rendimiento físico; Atletas; Regulación cardiovascular.
 
 \newpage
 
 # Introduction
 
-<!---- Antecedentes históricos ---->
+The autonomic nervous system is key in the regulation of non-voluntary physiological processes, such as cardiovascular responses [@shaffer2017overview]. At rest, the effects of activation of its sympathetic and parasympathetic branches regulate the autonomic balance of the heart. An electrocardiogram allows the time quantification of the successive R-R interval by Heart Rate Variability (HRV), which is considered a viable marker to measure cardiac autonomic modulation [@bigger1996heart].
 
+In sports with a high energy demand such as cycling, the autonomic system is essential for the athlete's response during the competition [@stanley2013cardiac]. During the competition, the reduction in parasympathetic activity and the simultaneous increase in sympathetic activity allows the cardiovascular system to supply high demands of recruited muscles and balance thermoregulatory function through blood flow [@fontolliet2018testing; @freeman2006autonomic]. Depending on the volume, intensity, duration and type of exercise, autonomic changes modify HRV [@griesbach2004voluntary; @martinez2021neurophysiological]. Athletes' performance depends on training and athletes morphological variables such as somatotype, body composition, and anthropometric measurements [@michael2017cardiac]. Recent studies indicate that body composition influences the baseline HRV parameters, even in Olympic athletes, which could have implications for the athlete's performance [@mancia2014autonomic; @lucini2022relationship].
 
-<!---- Conceptualización del problema ---->
+Although various factors affect the autonomic response and its immediate recovery from physical exercise, it is not yet certain how morphological variables could affect this modulation. Regularly, it has been studied how the modality and dosage of physical effort can neurophysiologically modulate the heart's response to exercise [@holmes2022comparison]. Hence, there is a growing interest in evaluating the response to stress induced by exercise through HRV. Particularly the immediate post-exercise recovery (<10 min.) has generated great scientific interest as it reflects aerobic capacity and performance [@stanley2013cardiac;@michael2016submaximal].
 
+To assess the physical performance of cyclists it is very common to apply the Functional Threshold Power (FTP) test. This test consists of a maximal sustained effort test, designed to assess cyclist power for one hour in a “near physiological steady state” [@allen2012training]. It is currently proposed that FTP can be predicted by taking 95% of the power output in a maximum of 20 min all-out effort test [@borszcz2018functional]. In this way, this test can predict the cyclist's response to this maximum effort in less time and also allows the evaluation of other physiological parameters of interest to the athlete [@mackey2021known].
 
-<!---- Hipótesis y objetivos ---->
-
+Currently, as far as our knowledge goes, no evidence has been found of the relationship between the effects of body composition parameters on autonomic regulation and its immediate response after an exercise protocol in high-performance cyclists. The aim of the present study was to evaluate the impact of a functional power threshold test (FTP) on cardiac autonomic regulation indicators in high-performance cyclists.
 
 # Material y methods
 
+## Study design
+
+A descriptive, correlational and cross-sectional study was developed. The study includes two consecutive stages. In the first stage, morphological variables of body composition were measured, and cardiovascular variables of HRV and the physical test of  FTP were evaluated in the second stage. The participants were chosen by non-probabilistic sampling among professional cyclists from the Magallanes region. The athletes were informed about the assessments and about risks /benefits. 
+
 ## Participants
 
-[...]. 
+All the cyclists signed the informed consent before carrying out the protocol for this study. The inclusion criteria were the following: (a) male cyclists who were between 20 and 40 years of age until the year 2022; (b) have permanent residence in the city of Punta Arenas; (c) have a minimum of 1 year of participation in competitive cycling; (d) complete the FTP test; (e) have attended the two assessment sessions. The exclusion criteria were: (a) taking any supplement or medication that could affect HRV before the physical test; (b) have suffered musculoskeletal injuries in the last three months; (c) presence of pain at the time of the measurements; (d) having some degree of cognitive or motor disability. In the registration stage, 35 athletes showed their intention to participate. After determining if participants met the inclusion/exclusion criteria, 12 cyclists were recruited. The studies involving human participants were reviewed and approved by The Ethics Committee of the University of Magallanes, Chile (Nº141CEC2018). All the participants provided their written informed consent to participate in this study.
 
-## Instruments
+## Procedure
 
-### Instrument 1 
+The measurements were carried out within in the Movement Analysis laboratory of Center of Education, Healthcare and Investigation (CADI-UMAG), during the first hours of the afternoon for all cyclists. In the first session, all morphological parameters (body weight, height, and anthropometry) were evaluated. In the second session, cardiovascular parameters were evaluated before, during and after the physical performance test.
 
-[...].
+### Functional Threshold Power protocol
 
-### Instrument 2
+The participants wore sportswear appropriate for the test. All participants were asked to: (a) get enough rest the night before, sleeping 8 hours or more; (b) avoid stimulant drinks or drugs before the measurements; (c) drink at least 2 liters of water the day before; and (d) eat regularly without changing their diet. The cyclists arrived 15 minutes before the test. The FTP protocol was carried out in a laboratory designed for the experiment at 22 °C and 30% relative humidity regulated by air conditioning.
 
-[...].
+Before starting the second stage of assessment, each cyclist remained seated in absolute rest for 10 minutes, while pretest HRV was being assessed. From them, 5 minutes of the record were considered for the analysis. After that, the cyclist got on the bike to start the physical test. Throughout the test, the athlete was cardiac monitored, which allowed him to monitor his cardiovascular health. In addition, the athletes could see his heart rate on the screen in front of them. After finishing the test, the athlete recovered two minutes, and again 10 minutes of HRV assessment sitting at absolute rest were recorded.
 
-### Instrument 3 
+### Morphological measures
 
-[...].
+Multi-frequency bioelectrical impedance analyzer, InBody S10 (Biospacte Co, Ltd, Korea/Model JMW140) was used according to the manufacturer's guidelines. This device estimates body composition using the difference of conductivity of the various tissues due to the difference of their biological characteristics [@buckinx2015concordance]. The body composition, including fat mass, fat free mass, body cell mass, appendicular skeletal muscle mass (ASM; kg/m2), whole-body phase angle and body water status were measured according to the recommendations of scientific evidence [@park2020assessment].
 
-### Instrument 4 
+### Functional Threshold Power Test
 
-[...].
+For the FTP assessment, a Tacx FLUX S Smart Direct Roller (Garmin ®) roller was used, since it is adaptable to the personal bicycles of each athlete. Through the roller program, the cadence of each athlete was calculated, expressed in revolutions per minute (rpm).
 
+The FTP is a test that gives us functional threshold heart rate (FTHR) or FTP data, essential to determine intensity levels or zones (priority to follow a training plan). This test has two versions; one of long duration (1 hour), and the second of 45 minutes. However, its 1-hour version can be overly demanding, especially for a group of users taking a high-demand test for the first time. Therefore, it is proposed to carry out the test of shorter duration (45 min); which consists of the following phases: (i) Warm-up, with 5 minutes of free pedaling, 20 seconds of resistance rhythm up to 130 W, 20 seconds of resistance rhythm at 165 W, 20 seconds of hard pedaling up to 195 W. Then 3 minutes of easy pedaling up to 80W, 3 minutes of hard pedaling up to 180 W, 2 minutes of hard pedaling up to 195 W and 6 minutes of easy pedaling up to 80 W. (ii) After the warm-up comes the main test, in which the cyclist must pedal for 20 minutes with the maximum possible effort. (iii) The cooldown phase is 5 minutes of easy pedaling.
 
-## Procedures 
+### Cardiovascular parameters
 
-[...].
+Cardiac autonomic modulation was determined via a recording of RR intervals wit a heart rate sensor strap (H10, Polar Electro Oy, Kempele, Finland), through Polar Team 2 system. The breathing rate of the subjects was spontaneous. Artifacts and ectopic heartbeats (which did not exceed 3% of the recorded data) were excluded [@bigger1996heart]. The time-domain parameters analyzed were the square root of the mean squared differences of the successive RR intervals (RMSSD, expressed in ms), which reflect the parasympathetic influence  [@buchheit2010monitoring] and the standard deviation of the RR intervals (SDNN), which reflect the total variability, that is, the sympathetic and parasympathetic contribution of the autonomic nervous system on the heart [@berntson1997heart; @buchheit2006cardiac]. The frequency domains considered in this study were the high frequency (HF) power band that reflects the parasympathetic influence and respiratory sinus arrhythmia [@akselrod1981power] and the low frequency (LF) band associated with baroreflex activity [@goldstein2011low]. The low-frequency band (VLF) is multi-faceted and strongly associated with emotional stress [@malik1996heart; @fisher2014heart; @mccraty2015heart]. 
 
-[...].  
+Additionally, Parasympathetic Nervous System (PNS) index, Sympathetic Nervous System (SNS) index and Stress Index (SI) were considered. PNS index, reflecting total vagal stimulation, is calculated from the mean RR intervals, RMSSD and Poincaré plot index SD1 in normalized units (linked to RMSSD) and reflects how many standard deviations above or below the normal population averages the obtained values are. SNS index, reflecting total sympathetic stimulation, is calculated from mean RRR intervals, Baevsky’s SI (a positively related value to cardiovascular system stress and cardiac sympathetic activity) and Poincaré plot index SD2 in normalized units (related to SDNN) and its interpretation is similar to PNS Index [@berntson1997heart; @rajendra2006heart]. The SI may be used as an indicator that represents the degree of load on the Autonomic Nervous System control [@yoo2021heart]; it is normalized by using the square root of Baevsky’s SI [@baevsky2008methodical], and calculated from the mode Mo (taken as the median of R-R intervals), AMo (the amplitude of the normalized RR interval histogram) and MxDMn (the distance between shortest and longest R-R intervals) by the following: 
+
+$$
+SI = \frac{\operatorname{AMO} \times 100\%}
+          {2 \times \operatorname{MO} \times \operatorname{MxDMn}}
+$$
+
+All the data obtained were analyzed using the Kubios HRV software [@tarvainen2014kubios].
 
 ## Statistical analyses
 
 Descriptive statistics were expressed as median and interquartile range (IQR) for continuous variables, and absolute and relative frequency (n [%]) for categorical outcomes.
 
-In order to assess the relationship between autonomic indexes we used Spearman's rank correlation, given that the data does not follow an aproximate Gaussian distribution, assessed through graphical and analytical methods. To analyze the change in autonomic parameters in response to FTP measurements, we compute the mean difference with 95% confidence interval (CI) bias corrected and accelerated, calculated through bootstrap resampling technique, reporting as well, the bias corrected standardize mean difference (Hedges *g*) with their corresponding 95% CI.
+In order to assess the relationship between autonomic indexes we used Spearman's rank correlation, given that the data does not follow an approximate Gaussian distribution, assessed through graphical and analytical methods. To analyze the change in autonomic parameters in response to FTP measurements, we compute the mean difference with 95% confidence interval (CI) bias corrected and accelerated, calculated through bootstrap resampling technique, reporting as well, the bias corrected standardize mean difference (Hedges *g*) with their corresponding 95% CI.
 
 To assess the influence of potential confounders on the autonomic response to FTP, we fitted a robust version of linear regression by iterated reweighted least squares (IRLS), assigning more weight to less extreme values and thus controlling for the influence of outliers when describing the estimated parameters of the model. To this end, the predictors were centered around their mean to interpret the intercept as the estimated response, while keeping the predictors constant and thus controlling for their influence.
 
@@ -113,13 +136,15 @@ library(datawizard)
 data("males", package = "cyclismProj") # cargamos los datos
 ```
 
+Sample characteristics and body composition parameters can be observed in [table 1](#tab1).
+
 ## Autonomic activity and stress
 
-When assessing the relationship between the associated variables within the athletes, we observed that a greater SNS activity and Stress index on baseline were associated with a smaller decrease in the PNS activity in response to the FTP test (baseline Stress, $\rho$ = 0.67, *p* = 0.017; baseline SNS, $\rho$ = 0.69, *p* = 0.013).
+When assessing the relationship between the associated variables within the athletes, we observed that a greater SNS activity and SI on baseline were associated with a smaller decrease in the PNS activity in response to the FTP test (baseline SI, $\rho$ = 0.67, *p* = 0.017; baseline SNS, $\rho$ = 0.69, *p* = 0.013).
 
-In this sense, a greater baseline PNS activity was associated with larger decreases on the PNS index in response to the FTP test ($\rho$ = -0.61, *p* = 0.037), and this decrease in ∆ PNS was associated with greater increases in the SNS activity and the stress index in response to the FTP test (∆ SNS, $\rho$ = -0.6, *p* = 0.039; ∆ Stress, $\rho$ = -0.62, *p* = 0.033). 
+In this sense, a greater baseline PNS activity was associated with larger decreases on the PNS index in response to the FTP test ($\rho$ = -0.61, *p* = 0.037), and this decrease in ∆ PNS was associated with greater increases in the SNS activity and the SI in response to the FTP test (∆SNS, $\rho$ = -0.6, *p* = 0.039; ∆SI, $\rho$ = -0.62, *p* = 0.033). 
 
-This is directly linked with PNS activity at post-SFT, whereas greater levels were associated with lower increases in Stress index and SNS activity levels in response to SFT test (∆ Stress, $\rho$ = -0.69, *p* = 0.014; ∆ SNS, $\rho$ = -0.77, *p* = 0.003). 
+This is directly linked with PNS activity at post-SFT, whereas greater levels were associated with lower increases in SI and SNS activity levels in response to SFT test (∆SI, $\rho$ = -0.69, *p* = 0.014; ∆SNS, $\rho$ = -0.77, *p* = 0.003). 
 
 ```{r, eval=FALSE}
 # PNS
@@ -140,9 +165,9 @@ report_statistics(lm(hrv_delta_stress ~ 1, males))
 
 ## Unadjusted autonomic response
 
-The mean observed difference in the PNS index was -2.03 points (CI~95%~[-2.53, -1.62]), suggesting a decrease in PNS activity post-SFT test (*t*(11) = -8.34, *p* < 0.001, Hedges *g* = 2.24, CI~95%~[1.17, 3.29]), while the SNS index experienced an increase of 6.28 points (CI~95%~[4.47, 8.48], *t*(11) = 5.83, *p* < 0.001, Hedges' *g* = -1.56, CI~95%~[-2.38, -0.72]) relative to their baseline values. The Stress and SNS index tend to exhibit similar behaviour between measurements of the FTP (association between ∆SNS and ∆Stress, $\rho$ = 0.98, *p* < 0.001), so the Stress index also experienced and increase from baseline relative to the FTP measurements (mean difference = 23.1, CI~95%~[14.80, 33.27], *t*(11) = 4.67, *p* < 0.001, Hedges' *g* = -1.25, CI~95%~[-1.96, -0.50]). The utonomic variations within subjects can be seen in figure 1.
+The mean observed difference in the PNS index was -2.03 points (CI~95%~[-2.53, -1.62]), suggesting a decrease in PNS activity post-SFT test (*t*(11) = -8.34, *p* < 0.001, Hedges *g* = 2.24, CI~95%~[1.17, 3.29]), while the SNS index experienced an increase of 6.28 points (CI~95%~[4.47, 8.48], *t*(11) = 5.83, *p* < 0.001, Hedges' *g* = -1.56, CI~95%~[-2.38, -0.72]) relative to their baseline values. The SI and SNS index tend to exhibit similar behavior between measurements of the FTP (association between ∆SNS and ∆SI, $\rho$ = 0.98, *p* < 0.001), so the SI also experienced and increase from baseline relative to the FTP measurements (mean difference = 23.1, CI~95%~[14.80, 33.27], *t*(11) = 4.67, *p* < 0.001, Hedges' *g* = -1.25, CI~95%~[-1.96, -0.50]). The autonomic variations within subjects can be seen in figure 1.
 
-```{r fig-1, fig.cap="Figure 1. Inter-individual variations of the autonomic regulation indexes. Boxplots and errorbars with 95% CI based on bootstrap resampling around the mean and the within subjects response to the FTP test (represented by conected lines) are shown."}
+```{r fig-1, fig.cap="**Figure 1**. Inter-individual variations of the autonomic regulation indexes. Boxplots and errorbars with 95% CI based on bootstrap resampling around the mean and the within subjects response to the FTP test (represented by conected lines) are shown."}
 knitr::include_graphics("figures/figure-1.tiff")
 ```
 
@@ -156,15 +181,22 @@ report_parameters(x = rlm(model_simple, males, maxit = 1e5, acc = 1e-10))
 report_parameters(x = rlm(model_full, males, maxit = 1e5, acc = 1e-10))
 ```
 
-Rank based correlation analyses suggest that from all body composition parameters, skeletal muscle index (SMI) was the only one that was inversely associated with ∆PNS, suggesting that lower levels of SMI were related to a lower decrease in PNS activity in response to FTP test ($\rho$ = -0.69, *p* = 0.02). 
+Rank based correlation analyses suggest that from all body composition parameters, SMI was the only one that was inversely associated with ∆PNS, suggesting that lower levels of SMI were related to a lower decrease in PNS activity in response to FTP test ($\rho$ = -0.69, *p* = 0.02). 
 
 After fitting a simple linear model based on IRLS, we found that the ∆PNS changed from -2.03 points (CI~95%~[-2.53, -1.62]) in the first unadjusted comparison to -1.89 points (CI~95%~[-2.33, -1.45], *t*(9) = -9.73, *p* < 0.001) when controlling for SMI ($\beta$ = -0.71, CI~95%~[-1.53, 0.10], *t*(9) = -1.99, *p* = 0.078). 
 
 However, and after testing the influence of other predictors in the model while still considering SMI as a predictor, we observed that the inclusion of the waist-to-hip ratio (WH~ratio~) yielded a significant effect on ∆PNS ($\beta$ = 7.90, CI~95%~[4.16, 11.63], *t*(8) = 4.88, *p* = 0.001), as well as for the effect of SMI on the latter ($\beta$ = -1.38, CI~95%~[-1.84, -0.92], *t*(8) = -6.94, *p* < 0.001). Thus, after adjusting for the effect of SMI and WH~ratio~, the estimated response of ∆PNS to the FTP test was -1.93 points (CI~95%~[-2.16, -1.70], *t*(8) = -19.15, *p* < 0.001). The final model explaining the PNS response to the FTP test is best described by the following equation:
 
+```{r, eval=FALSE}
+model_full <- hrv_delta_pns ~ ime + waist_hip_ratio
+report_table(x = rlm(model_full, males, maxit = 1e5, acc = 1e-10), digits = 3)
+```
+
 $$
-\Delta \operatorname{PNS} = -1.928 -1.379 \times \operatorname{SMI} + 7.898 \times \operatorname{{WH}_{ratio}} + \epsilon
+\Delta \operatorname{PNS} = 2.835 -1.379 \times \operatorname{SMI} + 7.898 \times \operatorname{{WH}_{ratio}} + \epsilon
 $$
+
+***Equation 1**. Final model using SMI and WH~ratio~ to explain the ∆ of PNS in response to the FTP test. The predictors in this equation are not centered, so they can be used for prediction.*
 
 ```{r sns-comp, eval=FALSE}
 # IMO = (MBI = muscle-bone index)
@@ -187,34 +219,67 @@ When fitting a robust linear regression with IRLS, we observed that the response
 
 Despite of previous findings in simple models, and after trying different combinations of predictors while keeping MBI in the final model, we could identify an interaction effect between the mean power achieved during the FTP test (Power^FTP^) and MBI ($\beta$ = -0.05, CI~95%~[-0.09, -4.99e-03], *t*(8) = -2.56, *p* = 0.033), considering that Power^FTP^ itself was not statistically influential on the outcome response ($\beta$ = -3.23e-03, CI~95%~[-0.02, 0.01], *t*(8) = -0.41, *p* = 0.692) while MBI was still significant, even after including Power^FTP^ in the equation ($\beta$ = 10.26, CI~95%~[8.10, 12.42], *t*(8) = 10.96, *p* < 0.001). In this sense, and after controlling for the effect of MBI and Power^FTP^, we observed that the estimated response of ∆SNS was 6.06 points (CI~95%~[5.52, 6.59], *t*(8) = 26.01, *p* < 0.001). The linear relationship between variables can be seen in figure 2. The final model that best explains the variations in ∆SNS response was the following:
 
+```{r, eval=FALSE}
+model_full <- hrv_delta_sns ~ imo * ftp_mean_power
+report_table(x = rlm(model_full, males, maxit = 1e5, acc = 1e-10), digits = 3)
+```
+
 $$
-\Delta \operatorname{SNS} = 6.055 + 10.259 \times \operatorname{MBI} -0.003 \times \operatorname{{Power}^{FTP}} -0.050 \times (\operatorname{MBI} \times \operatorname{{Power}^{FTP}}) + \epsilon
+\Delta \operatorname{SNS} = -52.007 + 21.180 \times \operatorname{MBI} -0.134 \times \operatorname{{Power}^{FTP}} -0.050 \times (\operatorname{MBI} \times \operatorname{{Power}^{FTP}}) + \epsilon
 $$
 
-```{r fig-2, fig.cap="Figure 2. Linear response between autonomic parameters at baseline, post-SFT and the variations between these time periods. A, Interaction effect between Power^FTP^ and MBI; B, Linear relationship between HRV measurements."}
+***Equation 2**.  Final model using MBI, Power^FTP^ and their interaction to explain the ∆ of SNS in response to the FTP test. The predictors in this equation are not centered, so they can be used for prediction.*
+
+```{r fig-2, fig.cap="**Figure 2**. Linear response between autonomic parameters at baseline, post-SFT and the variations between these time periods. A, Interaction effect between Power^FTP^ and MBI; B, Linear relationship between HRV measurements."}
 knitr::include_graphics("figures/figure-2.tiff")
 ```
 
 # Discussion
 
-[...].
+In this study, we found associations between autonomic cardiac modulation parameters and with the body mass composition parameters in immediate response to aerobic maximal exercise, as indicated by Spearman’s Rank correlation and IRLS. 
 
-[...].
+From all body composition parameters, SMI was the only one that showed a negative effect on ∆PNS, whereas MBI was positively correlated with ∆SNS in cyclists. These findings suggest that cardiac autonomic response to FTP test, an aerobic maximal exercise, could be influenced by muscle indices (SMI and MBI), so that higher SMI and MBI could negatively affect cardiac autonomic response, moving SNS and PNS out of balance. Contrary to what might be thought, cyclists with lower SMI and MBI maintain a greater cardiac autonomic balance between parasympathetic and sympathetic activity when their response to this type of exercise is observed.
 
-[...].
+In high-performance cyclists, body composition is relevant and has been correlated with their physical performance during competitions [@mujika2016effects]. A high muscle index and a low percentage of body fat are generally desired by physical trainers and athletes. However, the autonomic effects of this type of variable on cardiac regulation is still not clear. Some important precedents indicate that cycling was the sport with the most sudden deaths during its practice in Spain between 1995 and 2001, which suggests that cycling is very demanding for human systems and the neurophysiological regulation of the heart is in check [@suarez2002causes].
+
+HRV, reflecting cardiac autonomic regulation, is known for being a tool identifying patients at risk of cardiovascular death and a great predictor of prognosis in several neurological disorders. A worse cardiac autonomic response to exercise, found in cyclists with higher muscle indices, could lead to cardiovascular disorders or decrease the effort threshold in longer competitive activities, although these hypotheses have not been investigated. Considering this, professionals surrounding the high-performance cyclist should consider strategies for minimizing exercise induced autonomic dysregulation.
+
+Although the morphological composition of the cyclist partly determines their performance in a competition, we have observed in this study that it may also imply different characteristics of cardiovascular recovery among athletes [@al2019metabolic]. Possibly the SMI would reflect a greater autonomic wear and tear compared to a test as demanding as the FTP. This wear could hinder faster autonomic recovery, especially of the PNS, which we know exerts strong regulation of the autonomic nervous system [@fontolliet2018testing; @porges1995cardiac]. Due to these characteristics, the faster autonomic recovery of athletes with a higher muscle index could be conditioned by their morphology, which should be considered for a better recovery of cyclists, both in training and after a competition.
+
+We know that HRV, reflecting this cardiac autonomic regulation, allows us to interpret patients at risk of cardiovascular death, being a great prognostic predictor in various neurological disorders. We believe that a worse cardiac autonomic response to exercise, found in cyclists with higher muscle indices, could indicate that these athletes could lead to cardiovascular disorders or lower the effort threshold in longer competitive activities. With this in mind, professionals surrounding the high-performance cyclist should consider strategies to minimize exercise-induced autonomic dysregulation.
 
 # Conclusion
 
-[...]. 
+The skeletal muscle index showed a negative effect on ∆PNS, whereas the muscle-bone index was positively correlated with the ∆SNS in cyclists. These findings suggest that cardiac autonomic response to maximal aerobic exercise such as FTP could be influenced by athlete muscle indices (SMI and MBI), such that higher SMI and MBI could negatively affect cardiac autonomic response. 
 
-# Acknowledgment
+# Data availability statement
 
-[...].
+The original contributions presented in the study are included in the article. Further inquiries can be directed to the corresponding author/s.
 
-# Conflicts of interest
+# Ethics statement
 
-[...].
+The studies involving human participants were reviewed and approved by The Ethics Committee of the University of Magallanes, Chile (Nº141CEC2018). The patients/participants provided their written informed consent to participate in this study.
+
+# Author contributions
+
+All authors listed have made a substantial, direct, and intellectual contribution to the work and approved it for publication
+
+# Acknowledgments
+
+We thank all study participants, and their coaches for their contribution.
+
+# Funding
+
+This work was funded by resources from the National Fund for the Promotion of Sports of Chile, code 1800120339 (Instituto Nacional de Deporte de Chile, IND). 
 
 # References
 
 <div id="refs"></div>
+
+\newpage
+
+```{r, echo=FALSE}
+readRDS("tables/table-1.RDS")
+```
+
+*[**Table 1**]{#tab1}. Body composition and sample characteristics. ECW, Extracellular water; ICW, Intracellular water; TCW, Total cellular water.*

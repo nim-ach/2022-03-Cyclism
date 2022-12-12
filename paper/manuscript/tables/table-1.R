@@ -12,18 +12,17 @@ data <- males
 
 # Data preparation --------------------------------------------------------
 
-questionnaires <- c("spaq_ssi", "spaq_severity", "beck_dep_score", "beck_dep_cat", "beck_anx_score", "beck_anx_cat")
 body_composition <- c("weight", "height", "bmi", "imo", "ime", "waist_hip_ratio", "mme", "visceral_fat",
                       "fat_mass_perc", "muscle_mass_perc", "bone_mass_perc", "residual_mass_perc",
                       "water_aec_act", "water_aic", "water_act", "water_aec")
 
 vars <- c("age", body_composition)
 
-tbl_summary(data,
+tbl <- tbl_summary(data,
             include = body_composition,
             type = everything() ~ "continuous",
-            missing = "no",
             digits = everything() ~ 1,
+            missing = "no",
             sort = everything() ~ "alphanumeric",
             label = list(
               weight ~ "Weight",
@@ -43,10 +42,15 @@ tbl_summary(data,
               water_act ~ "TCW",
               water_aec ~ "ECW"
             )) |>
-  as_gt() |>
-  gtsave("paper/manuscript/tables/table-1.rtf")
+  as_kable()
+
+
+
+saveRDS(tbl, "paper/manuscript/tables/table-1.RDS")
+
 
 # Table generation --------------------------------------------------------
+
 
 
 # Table exportation -------------------------------------------------------
